@@ -29,6 +29,11 @@
     "date": {
       "type": "date",
       "required": true
+    },
+    "slug": {
+      "type": "string",
+      "required": true,
+      "unique": true
     }
   }
 }

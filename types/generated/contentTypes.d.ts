@@ -413,6 +413,7 @@ export interface ApiPostPost extends Schema.CollectionType {
       'plugin::users-permissions.user'
     >;
     date: Attribute.Date & Attribute.Required;
+    slug: Attribute.String & Attribute.Required & Attribute.Unique;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
